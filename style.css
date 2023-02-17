@@ -1,0 +1,238 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=Roboto:wght@400;500;700;900&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif 'Roboto',
+        sans-serif'Ubuntu', sans-serif;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* Veriables */
+:root {
+    --main-color: #bc9667;
+    --second-color: #edeae3;
+    --dilwhite-color: #f3f5f8;
+    --darkGray-color: #3d535f;
+    --violet-color: #7f00ff;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--dilwhite-color);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    line-height: 80px;
+    z-index: 111;
+
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--darkGray-color);
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+b {
+    font-size: 70px;
+    color: var(--violet-color);
+}
+
+.navItems {
+    display: flex;
+}
+
+.navItems li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navItems li a {
+    font-size: 25px;
+    color: var(--darkGray-color);
+    letter-spacing: 3px;
+    text-decoration: none;
+}
+
+.navItems li a:hover,
+.links a:hover {
+    color: var(--violet-color);
+}
+
+.links a {
+    font-size: 30px;
+    color: var(--darkGray-color);
+    margin: 25px 10px;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    height:calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+    padding: 0 10%;
+    overflow: hidden;
+}
+.wrapper::before{
+    position: absolute;
+    content: '';
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    left: 2%;
+    top: 40%;
+    background: linear-gradient(45deg,#7f00ff,pink);
+    animation:object1 6s linear infinite;
+}
+.wrapper::after{
+    position: absolute;
+    content: '';
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    left: 35%;
+    top: 12%;
+    background: linear-gradient(45deg,#7f00ff,pink);
+    animation:object 6s linear infinite;
+}
+@keyframes object1 {
+    50%{
+        left: -4%;
+        top:41%
+    }
+}
+@keyframes object {
+    50%{
+        left: ;
+        top:15%
+    }
+}
+.cols {
+    width: 50%;
+}
+.cols0{
+    width: 65%;
+    z-index: 5;
+}
+.topline {
+    display: block;
+    position: relative;
+    font-size: 35px;
+    letter-spacing: 5px;
+    color: var(--darkGray-color);
+}
+
+.topline::after {
+    position: absolute;
+    content: '';
+    height: 4px;
+    width: 45px;
+    bottom: 10px;
+    background-color: var(--violet-color);
+}
+
+h1 {
+    display: block;
+    font-size: 8em;
+    font-weight: 900;
+    color: var(--darkGray-color);
+}
+
+.multi-text {
+    color: var(--violet-color);
+    text-transform: capitalize;
+   
+}
+
+p {
+    display: block;
+    width: 90%;
+    font-size: 1.2rem;
+    color: var(--darkGray-color);
+}
+
+.btns {
+    width: 100%;
+    position: relative;
+    left: 150px;
+}
+
+button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-size: 25px;
+    color: #fff;
+    font-weight: 400;
+    background-color: var(--darkGray-color);
+    padding: 8px 14px;
+    margin: 40px 5px;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.4);
+
+}
+
+button:hover {
+    background-color: var(--violet-color);
+}
+
+.img-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.img-box img {
+    position: relative;
+    height: 100%;
+    width: calc(130% -80px);
+    top: -100px;
+    right: 50px;
+    transform: rotateY(170deg);
+    animation: animateUser 4s linear infinite;
+}
+
+@keyframes animateUser {
+    50% {
+        right: 30px;
+        top: -90px;
+    }
+}/*
+#splash{
+    width: 100px;
+    height: 
+    100px;
+}*/
+.img-box #splash {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-35deg);
+    width: 160%;
+    filter: saturate(200%);
+    animation: animate 6s linear infinite;
+}
+@keyframes animate {
+    50%{
+        left: 51%;
+        top: 49%;
+        width:155%;
+    }
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---links to fontawsome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---link to css---->
+    <link rel="stylesheet" href="./style.css">
+    <title>Personal Portfolio website for typing effect</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="logo">
+                folio <b>.</b>
+            </div>
+            <ul class="navItems">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+            <div class="links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </nav>
+        <!--Banner-->
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">
+                    Hello
+                </span>
+                <h1>I'm <span class="multi-text"></span></h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, totam. Dolor voluptatibus ea
+                    vitae quis commodi omnis aliquam, mollitia soluta obcaecati minus!</p>
+                <div class="btns">
+                    <button>download CV</button>
+                    <button>hire me</button>
+                </div>
+            </div>
+       
+        <div class="cols cols1">
+<div class="img-box">
+    <img src="./photo/zak four.png" alt="developer" id="splash">
+    <img src="./photo/developer two.png" alt="developer">
+</div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12">
+</script>
+<script>
+    let typingEffect = new Typed(".multi-text", {
+        strings : ["Coder","designer","seo expert"],
+        loop : true,
+        typeSpeed : 100,
+        backSpeed : 80,
+        backDelay: 1500
+    })
+</script>
+</body>
+
+</html>
